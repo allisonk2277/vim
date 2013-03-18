@@ -36,8 +36,8 @@ set incsearch
 set mouse=a
 
 " Remap Ctrl-T to compile a TeX file. 
-noremap <c-t> :w<return>:! ctex %<return>
-inoremap <c-t> <c-o>:w<return><c-o>:! ctex %<return>
+"noremap <c-t> :w<return>:! ctex %<return>
+"inoremap <c-t> <c-o>:w<return><c-o>:! ctex %<return>
 
 " Set file format to Unix.
 set ff=unix
