@@ -11,7 +11,6 @@ autocmd FileType make setlocal noexpandtab
 
 " Use desert color syntax theme.
 colorscheme dk1
-set transparency=20
 
 " Wrap lines when editing .tex files.
 autocmd FileType tex setlocal wrap linebreak nolist nu

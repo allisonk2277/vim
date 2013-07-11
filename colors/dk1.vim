@@ -38,7 +38,7 @@ hi Comment          guifg=#00aa00   guibg=#000000
 hi Constant         guifg=#e9b96e   guibg=#000000
 hi Special          guifg=#af87d7   guibg=#000000
 hi Identifier       guifg=#00bbbb   guibg=#000000
-hi Statement        guifg=#e9b96e   guibg=#000000
+hi Statement        guifg=#af87d7   guibg=#000000
 hi PreProc          guifg=#af87d7   guibg=#000000
 hi Type             guifg=#00bbbb   guibg=#000000
 hi Underlined       gui=underline   guifg=#af87d7    guibg=#000000
@@ -75,8 +75,8 @@ hi MoreMsg          ctermfg=2       ctermbg=0
 hi ModeMsg          ctermfg=5       ctermbg=0
 hi LineNr           ctermfg=2       ctermbg=0
 hi Question         ctermfg=2       ctermbg=0
-hi StatusLine       ctermfg=8       ctermbg=white
-hi StatusLineNC     ctermfg=8       ctermbg=white
+hi StatusLine       cterm=reverse
+hi StatusLineNC     cterm=reverse
 hi VertSplit        cterm=reverse
 hi Title            ctermfg=4       ctermbg=0
 hi Visual           cterm=reverse
@@ -94,7 +94,7 @@ hi Comment          ctermfg=2       ctermbg=0
 hi Constant         ctermfg=3       ctermbg=0
 hi Special          ctermfg=5       ctermbg=0
 hi Identifier       ctermfg=6       ctermbg=0
-hi Statement        ctermfg=3       ctermbg=0
+hi Statement        ctermfg=5       ctermbg=0
 hi PreProc          ctermfg=5       ctermbg=0
 hi Type             ctermfg=6       ctermbg=0
 hi Underlined       cterm=underline ctermfg=5    ctermbg=0
