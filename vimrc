@@ -1,19 +1,44 @@
+" Use Vim settings instead of Vi settings
+set nocompatible
+
+" General configuration
+set showcmd
+set showmatch
+set ignorecase
+set smartcase
+set incsearch
+set mouse=a
+set visualbell
+set backspace=indent,eol,start
+set autoread
+
 " Turn syntax highlighting on.
 syntax on
+colorscheme dk1
 
-" Set tab size to 4.
-set tabstop=4
-set shiftwidth=4
+" Indentation
+filetype on
+filetype plugin on
+filetype indent on
 
-" Change tabs to spaces, except when writing makefiles.
+set tabstop=2
+set shiftwidth=2
 set expandtab
 autocmd FileType make setlocal noexpandtab
+set autoindent
+set smartindent
+set smarttab
 
-" Use desert color syntax theme.
-colorscheme dk1
+" Scrolling
+set scrolloff=8
 
 " Wrap lines when editing .tex files.
 autocmd FileType tex setlocal wrap linebreak nolist nu
+
+" Turn off swap files
+set noswapfile
+set nobackup
+set nowb
 
 " Show line numbers.
 "set nu
@@ -22,25 +47,23 @@ autocmd FileType tex setlocal wrap linebreak nolist nu
 set laststatus=2
 set statusline=%F\ %m\ %=%l,%c\ %P
 
-" Repeating settings from /etc/vim/vimrc
-if has("autocmd")
-        filetype plugin indent on
-endif
-
-set showcmd
-set showmatch
-set ignorecase
-set smartcase
-set incsearch
-set mouse=a
-
-" Remap Ctrl-T to compile a TeX file. 
-"noremap <c-t> :w<return>:! ctex %<return>
-"inoremap <c-t> <c-o>:w<return><c-o>:! ctex %<return>
-
 " Set file format to Unix.
 set ff=unix
 
 " Set the title to whatever file I'm opening.
 let &titlestring = expand("%:t")
 set title
+
+" Completion
+set wildmode=list:longest
+set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildignore+=*vim/backups*
+set wildignore+=*sass-cache*
+set wildignore+=*DS_Store*
+set wildignore+=vendor/rails/**
+set wildignore+=vendor/cache/**
+set wildignore+=*.gem
+set wildignore+=log/**
+set wildignore+=tmp/**
+set wildignore+=*.png,*.jpg,*.gif
