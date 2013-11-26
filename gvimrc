@@ -1,2 +1,2 @@
 " Make it transparent.
-set transparency=20
+"set transparency=20

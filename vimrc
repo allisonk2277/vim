@@ -14,6 +14,7 @@ set autoread
 
 " Turn syntax highlighting on.
 syntax on
+set background=dark
 colorscheme dk1
 
 " Indentation
@@ -24,10 +25,12 @@ filetype indent on
 set tabstop=2
 set shiftwidth=2
 set expandtab
-autocmd FileType make setlocal noexpandtab
 set autoindent
-set smartindent
 set smarttab
+" This sometimes conflicts with filetype indenting
+"set smartindent
+
+autocmd FileType make setlocal noexpandtab
 
 " Scrolling
 set scrolloff=8
