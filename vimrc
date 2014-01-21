@@ -32,6 +32,9 @@ set smarttab
 
 autocmd FileType make setlocal noexpandtab
 
+" For CS124...
+autocmd FileType c setlocal tabstop=4 shiftwidth=4
+
 " Scrolling
 set scrolloff=8
 
@@ -42,6 +45,9 @@ autocmd FileType tex setlocal wrap linebreak nolist nu
 set noswapfile
 set nobackup
 set nowb
+
+" Strip trailing spaces when saving file.
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Show line numbers.
 "set nu
