@@ -8,7 +8,6 @@ set ignorecase
 set smartcase
 set incsearch
 set mouse=a
-set visualbell
 set backspace=indent,eol,start
 set autoread
 
