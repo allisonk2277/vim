@@ -26,13 +26,9 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set smarttab
-" This sometimes conflicts with filetype indenting
-"set smartindent
 
+" Makefiles require hard tabs.
 autocmd FileType make setlocal noexpandtab
-
-" For CS124...
-autocmd FileType c setlocal tabstop=4 shiftwidth=4
 
 " Scrolling
 set scrolloff=8
