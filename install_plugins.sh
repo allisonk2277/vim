@@ -5,4 +5,4 @@ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 # Install plugins.
 vim +BundleInstall +qall
 
-echo "Finished.\n"
+echo "Finished installing vim plugins."

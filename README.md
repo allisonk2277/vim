@@ -9,3 +9,8 @@ git clone https://github.com/dkong1796/vim.git ~/.vim
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
 ```
+Then, install the plugins by running:
+```
+~/.vim/install_plugins.sh
+```
+Which will install Vundle and all included plugins automatically.
