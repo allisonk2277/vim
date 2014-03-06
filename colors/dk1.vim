@@ -5,9 +5,9 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name="dk2"
+let g:colors_name="dk1"
 
-" For inside gvim
+" For inside MacVim/gvim
 hi Normal           guifg=#ffffff   guibg=#000000
 hi SpecialKey       guifg=#00aa00   guibg=#000000
 hi NonText          guifg=#729fcf   guibg=#000000
@@ -19,9 +19,10 @@ hi MoreMsg          guifg=#00aa00   guibg=#000000
 hi ModeMsg          guifg=#af87d7   guibg=#000000
 hi LineNr           guifg=#00aa00   guibg=#000000
 hi Question         guifg=#00aa00   guibg=#000000
-hi StatusLine       guifg=#555753   guibg=#ffffff
-hi StatusLineNC     guifg=#555753   guibg=#ffffff
-hi VertSplit        gui=reverse
+hi StatusLine       guifg=#555555   guibg=#ffffff
+hi StatusLineNC     guifg=#555555   guibg=#ffffff
+" VertSplit is reversed (fg = background, bg = foreground).
+hi VertSplit        guifg=#000000   guibg=#888888
 hi Title            guifg=#729fcf   guibg=#000000
 hi Visual           gui=reverse
 hi VisualNOS        gui=reverse
