@@ -60,10 +60,6 @@ set statusline=%F\ %m\ %=%l,%c\ %P
 " Set file format to Unix.
 set ff=unix
 
-" Set the title to whatever file I'm opening.
-let &titlestring = expand("%:t")
-set title
-
 " Completion
 set wildmode=list:longest
 set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
