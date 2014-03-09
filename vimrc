@@ -1,6 +1,12 @@
 " Use Vim settings instead of Vi settings
 set nocompatible
 
+" Load all plugins specified in ~/.vim/vundle.vim.
+" We let the Vundle plugin manage all other plugins.
+if filereadable(expand("~/.vim/vundles.vim"))
+  source ~/.vim/vundles.vim
+endif
+
 " General configuration
 set showcmd
 set showmatch

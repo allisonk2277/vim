@@ -5,9 +5,9 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name="dk2"
+let g:colors_name="dk1"
 
-" For inside gvim
+" For inside MacVim/gvim
 hi Normal           guifg=#ffffff   guibg=#000000
 hi SpecialKey       guifg=#00aa00   guibg=#000000
 hi NonText          guifg=#729fcf   guibg=#000000
@@ -19,9 +19,10 @@ hi MoreMsg          guifg=#00aa00   guibg=#000000
 hi ModeMsg          guifg=#af87d7   guibg=#000000
 hi LineNr           guifg=#00aa00   guibg=#000000
 hi Question         guifg=#00aa00   guibg=#000000
-hi StatusLine       guifg=#555753   guibg=#ffffff
-hi StatusLineNC     guifg=#555753   guibg=#ffffff
-hi VertSplit        gui=reverse
+hi StatusLine       guifg=#555555   guibg=#ffffff
+hi StatusLineNC     guifg=#555555   guibg=#ffffff
+" VertSplit is reversed (fg = background, bg = foreground).
+hi VertSplit        guifg=#000000   guibg=#888888
 hi Title            guifg=#729fcf   guibg=#000000
 hi Visual           gui=reverse
 hi VisualNOS        gui=reverse
@@ -45,24 +46,29 @@ hi Underlined       gui=underline   guifg=#af87d7    guibg=#000000
 hi Ignore           guifg=#555753
 hi Error            guifg=#d3d7cf   guibg=#a40000
 
+" NerdTree color customizations.
+hi NERDTreeDir      guifg=#729fcf   guibg=#000000
+hi NERDTreeFile     guifg=#ffffff   guibg=#000000
+hi NERDTreeExecFile guifg=#00aa00   guibg=#000000
+
 " For inside a terminal
 " Use the color scheme:
-"   0: #000000
-"   1: #a40000
-"   2: #00aa00
-"   3: #e9b96e
-"   4: #729fcf
-"   5: #af87d7
-"   6: #00bbbb
-"   7: #d3d7cf
-"   8: #555753
-"   9: #a40000
-"  10: #00aa00
-"  11: #e9b96e
-"  12: #729fcf
-"  13: #af87d7
-"  14: #00bbbb
-"  15: #eeeeec
+"   0: #000000 black
+"   1: #a40000 red
+"   2: #00aa00 green
+"   3: #e9b96e light brown/yellow
+"   4: #729fcf light blue
+"   5: #af87d7 light purple
+"   6: #00bbbb cyan
+"   7: #d3d7cf light grey
+"   8: #555753 dark grey
+"   9: #a40000 red
+"  10: #00aa00 green
+"  11: #e9b96e light brown/yellow
+"  12: #729fcf light blue
+"  13: #af87d7 light purple
+"  14: #00bbbb cyan
+"  15: #eeeeec very light grey
 "
 hi Normal           ctermfg=white   ctermbg=0
 hi SpecialKey       ctermfg=2       ctermbg=0

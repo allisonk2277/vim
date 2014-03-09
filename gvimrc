@@ -1,6 +1,16 @@
 " Make it transparent.
-"set transparency=20
+if has ("gui_macvim")
+  set transparency=20
+endif
 
-" Maximize the window's height and set width to 80 cols
+" Maximize the window's height.
 set lines=999
-set columns=80
+
+" Set width of file tree side bar.
+let g:NERDTreeWinSize = 30
+
+" Set number of columns for the main panel.
+let s:editor_width = 80
+
+" Set the actual width of the window. We add 1 for the dividing column.
+let &columns = s:editor_width + g:NERDTreeWinSize + 1
