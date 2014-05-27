@@ -1,6 +1,6 @@
 " Make it transparent.
 if has ("gui_macvim")
-  set transparency=20
+  set transparency=0
 endif
 
 " Maximize the window's height.
