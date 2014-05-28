@@ -28,19 +28,14 @@ filetype plugin on
 filetype indent on
 
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
 set smarttab
 
-" Makefiles require hard tabs.
-autocmd FileType make setlocal noexpandtab
-
 " Scrolling
 set scrolloff=8
-
-" Wrap lines when editing .tex files.
-autocmd FileType tex setlocal wrap linebreak nolist nu
 
 " Turn off swap files
 set noswapfile
@@ -49,9 +44,6 @@ set nowb
 
 " Strip trailing spaces when saving file.
 autocmd BufWritePre * :%s/\s\+$//e
-
-" Show line numbers.
-"set nu
 
 " Show status bar and title.
 set laststatus=2

@@ -7,7 +7,7 @@ endif
 set lines=999
 
 " Set width of file tree side bar.
-let g:NERDTreeWinSize = 30
+let g:NERDTreeWinSize = 27
 
 " Set number of columns for the main panel.
 let s:editor_width = 80
