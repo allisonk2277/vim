@@ -55,7 +55,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Show status bar and title.
 set laststatus=2
-set statusline=%F\ %m\ %=%l,%c\ %P
 
 " Set file format to Unix.
 set ff=unix
