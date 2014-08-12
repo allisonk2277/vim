@@ -17,15 +17,23 @@ Bundle "gmarik/vundle"
 
 " ===== List of all bundles =====
 
-" Combines file tree and tabs.
+" File navigation
 Bundle "jistr/vim-nerdtree-tabs"
 Bundle "scrooloose/nerdtree"
 
-" Better status line.
+" Status line
 Bundle "bling/vim-airline"
 
-" Makes it easier to use git.
+" Git
 Bundle "tpope/vim-fugitive"
+
+" Javascript
+Bundle "pangloss/vim-javascript"
+Bundle "othree/javascript-libraries-syntax.vim"
+Bundle "kchmck/vim-coffee-script"
+
+" Markdown
+Bundle "jtratner/vim-flavored-markdown.git"
 
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on
