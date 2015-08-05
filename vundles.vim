@@ -27,6 +27,9 @@ Bundle "bling/vim-airline"
 " Git
 Bundle "tpope/vim-fugitive"
 
+" C/C++
+Bundle "octol/vim-cpp-enhanced-highlight"
+
 " Javascript
 Bundle "pangloss/vim-javascript"
 Bundle "othree/javascript-libraries-syntax.vim"
