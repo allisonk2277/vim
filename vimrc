@@ -27,7 +27,8 @@ if !has("gui_running")
   set t_Co=256
 endif
 
-" Indentation
+" Indentation defaults. Can be overridden by filetype specific preferences
+" in after/ftplugin.
 filetype on
 filetype plugin on
 filetype indent on
@@ -39,10 +40,10 @@ set expandtab
 set autoindent
 set smarttab
 
-" Scrolling
+" Automatically scrolls when the cursor is close to the top/bottom of window.
 set scrolloff=8
 
-" Turn off swap files
+" Turn off swap files.
 set noswapfile
 set nobackup
 set nowb
@@ -56,10 +57,10 @@ set laststatus=2
 " Set file format to Unix.
 set ff=unix
 
-" Completion
+" Completion. Use ctrl-n and ctrl-p to scroll through matches.
 set wildmode=list:longest
-set wildmenu                "enable ctrl-n and ctrl-p to scroll thru matches
-set wildignore=*.o,*.obj,*~ "stuff to ignore when tab completing
+set wildmenu
+set wildignore=*.o,*.obj,*~
 set wildignore+=*vim/backups*
 set wildignore+=*sass-cache*
 set wildignore+=*DS_Store*
