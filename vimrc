@@ -22,6 +22,11 @@ syntax on
 set background=dark
 colorscheme jellybeans
 
+" For terminal vim, set 256 colors so color scheme renders properly.
+if !has("gui_running")
+  set t_Co=256
+endif
+
 " Indentation
 filetype on
 filetype plugin on
