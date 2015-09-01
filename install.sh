@@ -4,6 +4,7 @@
 rm -f ~/.vimrc ~/.gvimrc
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
+ln -s ~/.vim/ideavimrc ~/.ideavimrc
 
 # Install Vundle.
 rm -rf ~/.vim/bundle/vundle
