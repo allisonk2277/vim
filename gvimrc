@@ -12,5 +12,8 @@ let g:NERDTreeWinSize = 27
 " Set number of columns for the main panel.
 let s:editor_width = 80
 
-" Set the actual width of the window. We add 1 for the dividing column.
-let &columns = s:editor_width + g:NERDTreeWinSize + 1
+" Set the actual width of the window.
+let &columns = s:editor_width
+
+" Turn off NERDTree by default
+let g:nerdtree_tabs_open_on_gui_startup = 0
