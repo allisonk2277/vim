@@ -54,6 +54,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Show status bar and title.
 set laststatus=2
 
+" Use powerline patched fonts (Menlo is the default OS X terminal font).
+set guifont=Menlo\ for\ Powerline
+let g:airline_powerline_fonts = 1
+
 " Set file format to Unix.
 set ff=unix
 
