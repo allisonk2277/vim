@@ -20,7 +20,7 @@ set autoread
 " Turn syntax highlighting on.
 syntax on
 set background=dark
-colorscheme jellybeans
+colorscheme antares
 
 " For terminal vim, set 256 colors so color scheme renders properly.
 if !has("gui_running")
