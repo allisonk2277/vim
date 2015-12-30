@@ -38,5 +38,8 @@ Bundle "kchmck/vim-coffee-script"
 " Markdown
 Bundle "jtratner/vim-flavored-markdown.git"
 
+" Blaze/Bazel
+Bundle "davidzchen/vim-bazel"
+
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on
