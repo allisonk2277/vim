@@ -17,10 +17,6 @@ Bundle "gmarik/vundle"
 
 " ===== List of all bundles =====
 
-" File navigation
-Bundle "jistr/vim-nerdtree-tabs"
-Bundle "scrooloose/nerdtree"
-
 " Status line
 Bundle "bling/vim-airline"
 
@@ -30,13 +26,8 @@ Bundle "tpope/vim-fugitive"
 " C/C++
 Bundle "octol/vim-cpp-enhanced-highlight"
 
-" Javascript
-Bundle "pangloss/vim-javascript"
-Bundle "othree/javascript-libraries-syntax.vim"
-Bundle "kchmck/vim-coffee-script"
-
 " Markdown
-Bundle "jtratner/vim-flavored-markdown.git"
+Bundle "jtratner/vim-flavored-markdown"
 
 " Blaze/Bazel
 Bundle "davidzchen/vim-bazel"
