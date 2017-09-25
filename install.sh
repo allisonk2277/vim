@@ -19,7 +19,7 @@ if [ "$(uname)" == "Linux" ]; then
   if [ ! -d $HOME/.fonts ]; then
     mkdir -p $HOME/.fonts
   fi
-  cp $HOME/.vim/fonts/* $HOME/.fonts
+  cp $HOME/.vim/fonts/*/* $HOME/.fonts
   # Update font cache
   fc-cache -vf $HOME/.fonts > /dev/null
 # OS X
@@ -28,7 +28,7 @@ elif [ "$(uname)" == "Darwin" ]; then
   if [ ! -d $HOME/Library/Fonts ]; then
     mkdir -p $HOME/Library/Fonts
   fi
-  cp $HOME/.vim/fonts/* $HOME/Library/Fonts
+  cp $HOME/.vim/fonts/*/* $HOME/Library/Fonts
 else
   echo "Not running Linux or OS X, so not installing custom fonts."
 fi
