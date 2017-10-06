@@ -8,10 +8,10 @@ ln -s $HOME/.vim/ideavimrc $HOME/.ideavimrc
 
 # Install Vundle.
 rm -rf $HOME/.vim/bundle/vundle
-git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/vundle
 
 # Install plugins.
-vim +BundleInstall +qall
+vim +PluginInstall +qall
 
 # Install custom fonts.
 if [ "$(uname)" == "Linux" ]; then

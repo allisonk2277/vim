@@ -4,33 +4,35 @@
 "
 " This file contains a list of plugins installed by vundle.
 " When this list is updated, update vundle by running the command
-" :BundleInstall from within vim.
+" :PluginInstall from within vim.
 "
 " Filetype off is required by vundle.
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/vundle
+call vundle#begin()
 
 " Let Vundle manage Vundle (required)
-Bundle "gmarik/vundle"
+Plugin 'VundleVim/Vundle.vim'
 
 " ===== List of all bundles =====
 
 " Status line
-Bundle "bling/vim-airline"
+Plugin 'bling/vim-airline'
 
 " Git
-Bundle "tpope/vim-fugitive"
+Plugin 'tpope/vim-fugitive'
 
 " C/C++
-Bundle "octol/vim-cpp-enhanced-highlight"
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Markdown
-Bundle "jtratner/vim-flavored-markdown"
+Plugin 'jtratner/vim-flavored-markdown'
 
 " Blaze/Bazel
-Bundle "davidzchen/vim-bazel"
+Plugin 'davidzchen/vim-bazel'
+
+call vundle#end()
 
 " Filetype plugin indent on is required by vundle
 filetype plugin indent on
