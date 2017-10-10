@@ -55,7 +55,12 @@ autocmd BufWritePre * :%s/\s\+$//e
 set laststatus=2
 
 " Set font to one patched for Powerline.
-set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
+if has("gui_macvim")
+  set guifont=Meslo\ LG\ S\ for\ Powerline
+else
+  set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
+endif
+
 let g:airline_powerline_fonts = 1
 
 " Set file format to Unix.
