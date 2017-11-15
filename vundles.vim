@@ -26,11 +26,12 @@ Plugin 'tpope/vim-fugitive'
 " C/C++
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
+" JS/TypeScript
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+
 " Markdown
 Plugin 'jtratner/vim-flavored-markdown'
-
-" Blaze/Bazel
-Plugin 'davidzchen/vim-bazel'
 
 call vundle#end()
 
