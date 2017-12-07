@@ -66,6 +66,9 @@ let g:airline_powerline_fonts = 1
 " Set file format to Unix.
 set ff=unix
 
+" Use the system clipboard by default.
+set clipboard=unnamedplus
+
 " Bash-like autocomplete. You can use Ctrl-n and Ctrl-p to go through matches.
 set wildmode=list:longest
 set wildmenu
