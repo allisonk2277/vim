@@ -58,7 +58,7 @@ set laststatus=2
 if has("gui_macvim")
   set guifont=Meslo\ LG\ S\ for\ Powerline
 else
-  set guifont=Meslo\ LG\ S\ for\ Powerline\ 10
+  set guifont=Meslo\ LG\ S\ for\ Powerline\ 9
 endif
 
 let g:airline_powerline_fonts = 1

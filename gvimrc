@@ -3,6 +3,9 @@
 "  set transparency=10
 "endif
 
+" Hide toolbars/scroll bars/etc.
+set guioptions=
+
 " Maximize the window's height.
 set lines=999
 

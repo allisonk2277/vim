@@ -7,8 +7,7 @@ ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
 ln -s $HOME/.vim/ideavimrc $HOME/.ideavimrc
 
 # Install Vundle.
-rm -rf $HOME/.vim/bundle/Vundle.vim
-rm -rf $HOME/.vim/bundle/vundle
+rm -rf $HOME/.vim/bundle/
 git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
 # Install plugins.

@@ -30,9 +30,6 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 
-" Markdown
-Plugin 'jtratner/vim-flavored-markdown'
-
 call vundle#end()
 
 " Filetype plugin indent on is required by vundle
