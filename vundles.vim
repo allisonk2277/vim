@@ -28,6 +28,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " JS/TypeScript
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
