@@ -41,7 +41,7 @@ set autoindent
 set smarttab
 
 " Automatically scrolls when the cursor is close to the top/bottom of window.
-set scrolloff=8
+set scrolloff=4
 
 " Turn off swap files.
 set noswapfile
@@ -88,5 +88,6 @@ set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
 " Use F2 and F3 to save and restore sessions.
-map <F2> :mksession! ~/.vim_session <cr>
-map <F3> :source ~/.vim_session <cr>
+" This feature is disabled in favor of manually editing .vim_session.
+"map <F2> :mksession! ~/.vim_session <cr>
+"map <F3> :source ~/.vim_session <cr>
