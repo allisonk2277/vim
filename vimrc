@@ -73,6 +73,12 @@ else
   set clipboard=unnamedplus
 endif
 
+" Disable all bells.
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 " Bash-like autocomplete. You can use Ctrl-n and Ctrl-p to go through matches.
 set wildmode=list:longest
 set wildmenu

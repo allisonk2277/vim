@@ -7,7 +7,7 @@
 set guioptions=
 
 " Maximize the window's height.
-set lines=999
+set lines=50
 
 " Set number of columns for the main panel.
 let s:editor_width = 80
